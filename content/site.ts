@@ -14,7 +14,7 @@ export const images = {
 
 export const site = {
   conference: "CHI'27",
-  title: "The Future of Technology-Mediated Motor Learning",
+  title: "The Future of Technology Mediated Motor Learning",
   dateBadge: "10 MAY 2027",
   designer: "Yuto Suzuki",
   designerUrl: "https://yutosuzuki.vercel.app/",
