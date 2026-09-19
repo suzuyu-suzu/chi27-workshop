@@ -85,13 +85,20 @@ export type Organizer = {
 };
 
 export const organizers: Organizer[] = [
-  { name: "Nihar Sabnis", role: "Postdoc", affiliation: "ETH Zurich" },
-  { name: "Yuto Suzuki", role: "PhD Student", affiliation: "Hokkaido University" },
-  ...Array.from({ length: 8 }, (_, i) => ({
-    name: `Organizer ${i + 3}`,
-    role: "Position",
-    affiliation: "Affiliation",
-  })),
+  { name: "Nihar Sabnis", photo: "/images/organizers/nihar-sabnis.jpg", role: "Postdoc", affiliation: "ETH Zürich" },
+  { name: "Yuto Suzuki", photo: "/images/organizers/yuto-suzuki.jpg", role: "Ph.D. Student", affiliation: "Hokkaido University" },
+  {
+    name: "Ana Tajadura-Jiménez", photo: "/images/organizers/ana-tajadura-jimenez.jpg",
+    role: "Associate Professor",
+    affiliation: "Universidad Carlos III de Madrid / University College London",
+  },
+  { name: "Jun Nishida", photo: "/images/organizers/jun-nishida.jpg", role: "Assistant Professor", affiliation: "University of Maryland" },
+  { name: "Donald Degraen", photo: "/images/organizers/donald-degraen.jpg", role: "Lecturer / Assistant Professor", affiliation: "University of Canterbury" },
+  { name: "Laia Turmo Vidal", photo: "/images/organizers/laia-turmo-vidal.jpg", role: "Assistant Professor", affiliation: "KTH Royal Institute of Technology" },
+  { name: "Don Samitha Elvitigala", photo: "/images/organizers/don-samitha-elvitigala.jpg", role: "Lecturer / Assistant Professor", affiliation: "Monash University" },
+  { name: "Robert Riener", photo: "/images/organizers/robert-riener.jpg", role: "Professor", affiliation: "ETH Zürich" },
+  { name: "José Manuel Vega-Cebrián", photo: "/images/organizers/jose-manuel-vega-cebrian.jpg", role: "Postdoc", affiliation: "Universidad Carlos III de Madrid" },
+  { name: "Peter Wolf", photo: "/images/organizers/peter-wolf.jpg", role: "Senior Scientist", affiliation: "ETH Zürich" },
 ];
 
 /* ---------------- Call for Participation ---------------- */
