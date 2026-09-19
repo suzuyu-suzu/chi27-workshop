@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   basePath,
   images: { unoptimized: true },
   trailingSlash: true,
+  agentRules: false, // next dev が AGENTS.md / CLAUDE.md を自動生成しないように
 };
 
 export default nextConfig;
