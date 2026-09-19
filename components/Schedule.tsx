@@ -30,7 +30,17 @@ export default function Schedule() {
               borderColor: i === 0 ? colors.yellow : "rgba(255,255,255,0.25)",
             }}
           >
-            <Typography sx={{ fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", fontSize: "0.9rem" }}>
+            {/* 5列表示では都市名が折り返すことがあるので、全カードで2行分の高さを確保して UTC の位置を揃える */}
+            <Typography
+              sx={{
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+                fontSize: "0.9rem",
+                lineHeight: 1.4,
+                minHeight: { md: "2.8em" },
+              }}
+            >
               {c.name}
             </Typography>
             <Typography sx={{ color: colors.yellow, fontWeight: 700, fontSize: "0.8rem", mb: 1 }}>
