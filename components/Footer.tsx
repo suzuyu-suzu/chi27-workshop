@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import { site } from "@/content/site";
 
@@ -11,7 +12,10 @@ export default function Footer() {
           {site.conference} — {site.title}
         </Typography>
         <Typography sx={{ fontSize: "0.9rem", color: "text.secondary", mt: 0.5 }}>
-          Designed by {site.designer}
+          Designed by{" "}
+          <Link href={site.designerUrl} target="_blank" rel="noopener" color="inherit" underline="always">
+            {site.designer}
+          </Link>
         </Typography>
       </Container>
     </Box>
