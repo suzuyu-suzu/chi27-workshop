@@ -87,7 +87,7 @@ export type Organizer = {
 
 export const organizers: Organizer[] = [
   { name: "Nihar Sabnis", url: "https://sms.hest.ethz.ch/the-group/team/nihar-sabnis.html", photo: "/images/organizers/nihar-sabnis.jpg", role: "Postdoc", affiliation: "ETH Zürich" },
-  { name: "Yuto Suzuki", url: "https://yutosuzuki.vercel.app/", photo: "/images/organizers/yuto-suzuki.jpg", role: "Ph.D. Student", affiliation: "Hokkaido University" },
+  { name: "Yuto Suzuki", url: "https://yutosuzuki.vercel.app/", photo: "/images/organizers/yuto-suzuki.jpg", role: "Ph.D. Candidate", affiliation: "Hokkaido University" },
   {
     name: "Ana Tajadura-Jiménez", url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234", photo: "/images/organizers/ana-tajadura-jimenez.jpg",
     role: "Associate Professor",
@@ -98,7 +98,7 @@ export const organizers: Organizer[] = [
   { name: "Laia Turmo Vidal", url: "https://laiatv.github.io/", photo: "/images/organizers/laia-turmo-vidal.jpg", role: "Assistant Professor", affiliation: "KTH Royal Institute of Technology" },
   { name: "Don Samitha Elvitigala", url: "https://samithaelvitigala.com/", photo: "/images/organizers/don-samitha-elvitigala.jpg", role: "Lecturer / Assistant Professor", affiliation: "Monash University" },
   { name: "Robert Riener", url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html", photo: "/images/organizers/robert-riener.jpg", role: "Professor", affiliation: "ETH Zürich" },
-  { name: "José Manuel Vega-Cebrián", url: "https://imbodylab.com/2022/07/26/jose-manuel-vega-cebrian/", photo: "/images/organizers/jose-manuel-vega-cebrian.jpg", role: "Postdoc", affiliation: "Universidad Carlos III de Madrid" },
+  { name: "José Manuel Vega-Cebrián", url: "https://imbodylab.com/2022/07/26/jose-manuel-vega-cebrian/", photo: "/images/organizers/jose-manuel-vega-cebrian.jpg", role: "Ph.D. Candidate", affiliation: "Universidad Carlos III de Madrid" },
   { name: "Peter Wolf", url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html", photo: "/images/organizers/peter-wolf.jpg", role: "Senior Scientist", affiliation: "ETH Zürich" },
 ];
 
