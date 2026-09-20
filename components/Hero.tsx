@@ -103,16 +103,15 @@ export default function Hero() {
           position: "absolute",
           zIndex: 3,
           right: { xs: 16, md: 32 },
-          bottom: { xs: 8, md: 16 },
-          fontSize: { xs: "0.7rem", md: "0.8rem" },
-          color: colors.white,
-          textDecoration: "underline",
-          // 背景が明るい部分に重なっても読めるように、薄い紺色の下地を敷く
-          bgcolor: "rgba(41,66,112,0.7)",
-          px: 1,
-          py: 0.5,
-          borderRadius: 1,
-          "&:hover": { bgcolor: colors.navy },
+          // PC は波線より上の明るい背景に、スマホはイラストと重ならないよう波線の下に置く
+          bottom: { xs: -34, md: 124 },
+          fontSize: { xs: "0.65rem", md: "0.75rem" },
+          fontWeight: 700,
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+          color: { xs: colors.white, md: colors.navy },
+          textDecoration: "none",
+          "&:hover": { textDecoration: "underline" },
         }}
       >
         Image credits ↗
