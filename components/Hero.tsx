@@ -103,13 +103,13 @@ export default function Hero() {
           position: "absolute",
           zIndex: 3,
           right: { xs: 16, md: 32 },
-          // PC は波線より上の明るい背景に、スマホはイラストと重ならないよう波線の下に置く
-          bottom: { xs: -34, md: 124 },
+          // 背景と重ならないよう、波線の下（紺色の側）に置く
+          bottom: { xs: -34, md: -44 },
           fontSize: { xs: "0.65rem", md: "0.75rem" },
           fontWeight: 700,
           letterSpacing: "0.12em",
           textTransform: "uppercase",
-          color: { xs: colors.white, md: colors.navy },
+          color: colors.white,
           textDecoration: "none",
           "&:hover": { textDecoration: "underline" },
         }}
