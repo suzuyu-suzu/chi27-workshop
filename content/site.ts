@@ -25,13 +25,13 @@ export const about: string[] = [
 ];
 
 export const where = {
-  label: "Hybrid Workshop at CHI'27",
-  detail: "Pittsburgh, PA, USA & Online",
+  label: "Workshop at CHI'27",
+  detail: "Pittsburgh, PA, USA",
 };
 
 export const when = {
   label: "Monday, 10 May 2027",
-  detail: "09:00 – 15:00 (EDT, UTC−4)",
+  detail: "09:00 – 15:00",
 };
 
 export const topics: string[] = [
@@ -66,13 +66,6 @@ export const schedule = {
   ],
 };
 
-export const cities = [
-  { name: "Pittsburgh", timeZone: "America/New_York" },
-  { name: "San Francisco", timeZone: "America/Los_Angeles" },
-  { name: "Berlin", timeZone: "Europe/Berlin" },
-  { name: "New Delhi", timeZone: "Asia/Kolkata" },
-  { name: "Tokyo", timeZone: "Asia/Tokyo" },
-];
 
 /* ---------------- Organizers ---------------- */
 
@@ -83,11 +76,41 @@ export type Organizer = {
   /** 例: "/images/organizers/yuto.jpg"。未指定なら仮アイコン */
   photo?: string;
   url?: string;
+  /** ORGANIZERS のカードを開くと表示される回答。未記入の人は「Coming soon.」 */
+  motivation?: {
+    /** motivationQuestions.excites への回答（1行＝1項目） */
+    excites: string[];
+    /** motivationQuestions.personal への回答（1行＝1項目） */
+    personal: string[];
+  };
+};
+
+/** ORGANIZERS のカードを開いたときに表示される質問文 */
+export const motivationQuestions = {
+  excites: "What question about technology-mediated motor learning excites you?",
+  personal: "At a personal level, what would you like to get out of this workshop?",
 };
 
 export const organizers: Organizer[] = [
   { name: "Nihar Sabnis", url: "https://sms.hest.ethz.ch/the-group/team/nihar-sabnis.html", photo: "/images/organizers/nihar-sabnis.jpg", role: "Postdoc", affiliation: "ETH Zürich" },
-  { name: "Yuto Suzuki", url: "https://yutosuzuki.vercel.app/", photo: "/images/organizers/yuto-suzuki.jpg", role: "Ph.D. Candidate", affiliation: "Hokkaido University" },
+  {
+    name: "Yuto Suzuki",
+    url: "https://yutosuzuki.vercel.app/",
+    photo: "/images/organizers/yuto-suzuki.jpg",
+    role: "Ph.D. Candidate",
+    affiliation: "Hokkaido University",
+    motivation: {
+      excites: [
+        "How can specific HCI artefacts developed with emerging technologies be transferred to other movement domains? For example, how could a technology that visualizes the difference between a golfer's posture and the correct swing posture be applied beyond golf?",
+        "How can we encourage more research that attends to experiences, emotions, and lived experiences during motor learning, in a field dominated by positivist values? In other words, how might we bring about a qualitative turn in SportsHCI?",
+        "How can we encourage more long-term studies in motor learning, where research is often conducted through laboratory experiments?",
+      ],
+      personal: [
+        "Are there approaches that can be applied across multiple movement domains?",
+        "What values and philosophical perspectives—such as constructivism, positivism, and interpretivism—underpin the work of HCI researchers who support motor learning?",
+      ],
+    },
+  },
   {
     name: "Ana Tajadura-Jiménez", url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234", photo: "/images/organizers/ana-tajadura-jimenez.jpg",
     role: "Associate Professor",
@@ -100,6 +123,20 @@ export const organizers: Organizer[] = [
   { name: "Robert Riener", url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html", photo: "/images/organizers/robert-riener.jpg", role: "Professor", affiliation: "ETH Zürich" },
   { name: "José Manuel Vega-Cebrián", url: "https://imbodylab.com/2022/07/26/jose-manuel-vega-cebrian/", photo: "/images/organizers/jose-manuel-vega-cebrian.jpg", role: "Ph.D. Candidate", affiliation: "Universidad Carlos III de Madrid" },
   { name: "Peter Wolf", url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html", photo: "/images/organizers/peter-wolf.jpg", role: "Senior Scientist", affiliation: "ETH Zürich" },
+  {
+    name: "Xiao Xiao",
+    photo: "/images/organizers/xiao-xiao.jpg",
+    url: "https://scholar.google.com/citations?user=tbqqAOYAAAAJ&hl=en",
+    role: "Professor",
+    affiliation: "De Vinci Higher Education", // 要確認
+  },
+  {
+    name: "Joanna Bergström",
+    photo: "/images/organizers/joanna-bergstrom.jpg",
+    url: "https://scholar.google.com/citations?user=NL1Q89sAAAAJ&hl=en",
+    role: "Associate Professor",
+    affiliation: "University of Copenhagen",
+  },
 ];
 
 /* ---------------- Call for Participation ---------------- */
