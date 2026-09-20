@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import ImageCredits from "@/components/ImageCredits";
 import Organizers from "@/components/Organizers";
 import PositionPapers from "@/components/PositionPapers";
 import Schedule from "@/components/Schedule";
@@ -70,6 +71,10 @@ export default function Home() {
 
             <Section id="faq" title="FAQ">
               <Faq />
+            </Section>
+
+            <Section id="image-credits" title="Image credits">
+              <ImageCredits />
             </Section>
           </Stack>
         </Container>

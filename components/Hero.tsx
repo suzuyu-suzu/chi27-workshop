@@ -94,6 +94,29 @@ export default function Hero() {
         </Box>
       </Container>
 
+
+      {/* イラストの出典へのリンク（ページ末尾の Image credits へ移動） */}
+      <Typography
+        component="a"
+        href="#image-credits"
+        sx={{
+          position: "absolute",
+          zIndex: 3,
+          right: { xs: 16, md: 32 },
+          bottom: { xs: 8, md: 16 },
+          fontSize: { xs: "0.7rem", md: "0.8rem" },
+          color: colors.white,
+          textDecoration: "underline",
+          // 背景が明るい部分に重なっても読めるように、薄い紺色の下地を敷く
+          bgcolor: "rgba(41,66,112,0.7)",
+          px: 1,
+          py: 0.5,
+          borderRadius: 1,
+          "&:hover": { bgcolor: colors.navy },
+        }}
+      >
+        Image credits ↗
+      </Typography>
       {/* 波線（ヒーローと本文の境界） */}
       <Box
         component="svg"

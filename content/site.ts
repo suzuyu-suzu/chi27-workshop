@@ -158,6 +158,60 @@ export const positionPapers: PositionPaper[] = [
   { title: "Position Paper Title 3", authors: ["Name 1"], pdf: "/papers/sample.pdf" },
 ];
 
+/* ---------------- Image credits ---------------- */
+
+export type ImageCredit = {
+  /** イラスト内のどの部分かの説明 */
+  position: string;
+  /** 出典の説明（著者・年など）。論文がある場合は title / url を使う */
+  source: string;
+  title?: string;
+  /** 論文の DOI リンクなど。title に付きます */
+  url?: string;
+  venue?: string;
+};
+
+export const imageCredits: ImageCredit[] = [
+  {
+    position: "First-person XR view",
+    source: "Suzuki et al. (2026)",
+    title: "Toward Lived Metaphor: Exploring AR-Based Visual Metaphors for Instructing and Learning Embodied Knowledge in Aikido Practice",
+    url: "https://dl.acm.org/doi/full/10.1145/3800645.3812858",
+    venue: "DIS '26",
+  },
+  {
+    position: "Robotic device on the right hand",
+    source: "Lee et al. (2025)",
+    title: "Hapticus: Exploring the Effects of Haptic Feedback and its Customization on Motor Skill Learning",
+    url: "https://dl.acm.org/doi/full/10.1145/3706598.3713821",
+    venue: "CHI '25",
+  },
+  {
+    position: "Smartwatch on the left wrist",
+    source: "Screenshot by Yuto Suzuki",
+    url: "https://yutosuzuki.vercel.app/",
+  },
+  {
+    position: "Light on the chest",
+    source: "Turmo Vidal et al. (2020)",
+    title: "BodyLights: Open-Ended Augmented Feedback to Support Training Towards a Correct Exercise Execution",
+    url: "https://dl.acm.org/doi/abs/10.1145/3313831.3376268",
+    venue: "CHI '20",
+  },
+  {
+    position: "Augmented shoes",
+    source: "Wittchen et al. (2023)",
+    title: "Designing Interactive Shoes for Tactile Augmented Reality",
+    url: "https://dl.acm.org/doi/abs/10.1145/3582700.3582728",
+    venue: "AHs '23",
+  },
+  {
+    position: "Illustration",
+    source: "Yuto Suzuki",
+    url: "https://yutosuzuki.vercel.app/",
+  },
+];
+
 /* ---------------- FAQ ---------------- */
 
 export const faq: { question: string; answer: string }[] = [
