@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { images, site } from "@/content/site";
 import { asset } from "@/lib/asset";
 import { colors } from "@/theme/colors";
@@ -111,10 +112,15 @@ export default function Hero() {
           textTransform: "uppercase",
           color: colors.white,
           textDecoration: "none",
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 0.5,
           "&:hover": { textDecoration: "underline" },
         }}
       >
-        Image credits ↗
+        Image credits
+        {/* 矢印は文字ではなくアイコン（スマホで絵文字になるのを防ぐ） */}
+        <ArrowOutwardIcon sx={{ fontSize: "1.1em" }} />
       </Typography>
       {/* 波線（ヒーローと本文の境界） */}
       <Box
