@@ -21,7 +21,9 @@ export const site = {
 };
 
 export const about: string[] = [
-  "Emerging technologies such as multimodal feedback, wearable sensing, mixed reality, robotics, and artificial intelligence offer new ways to shape how people practice and experience movement. However, improved performance during technology-mediated practice does not necessarily result in lasting motor learning. This raises important questions about how these technologies should be designed, evaluated, and translated beyond controlled laboratory settings. This workshop brings together researchers and practitioners working at the intersection of HCI and motor learning to explore these challenges collaboratively. Through hands-on exploration, short presentations, breakout discussions, body-storming, and collaborative ideation, participants will share experiences, challenge current approaches, and explore how emerging technologies can support meaningful motor learning. We will connect perspectives across technologies and disciplines to identify design opportunities, methodological challenges, and open research questions, culminating in concrete directions for future research and collaboration."
+  "Emerging technologies such as multimodal feedback, wearable sensing, mixed reality, robotics, and artificial intelligence offer new ways to shape how people practice and experience movement. Yet, improved performance during technology-mediated practice does not necessarily result in lasting motor learning. This raises questions about how technology should support, evaluate, and translate motor learning across different people, skills, and contexts.",
+  "Research addressing these questions is distributed across technologies and movement domains, with researchers and labs often pursuing related questions independently. This workshop provides a platform to bring these perspectives together and explore what can be learned across domains.",
+  "Through short presentations, hands-on exploration, breakout discussions and collaborative ideation, participants will examine four interconnected questions around embodied learning, feedback and assistance, transfer, and evaluation and translation. We will synthesize these discussions into shared challenges, design opportunities, open research questions, and outline concrete directions for future research and collaboration.",
 ];
 
 export const where = {
@@ -31,41 +33,142 @@ export const where = {
 
 export const when = {
   label: "Monday, 10 May 2027",
-  detail: "09:00 – 15:00",
+  detail: "Half-day workshop (4 hours)",
 };
 
-export const topics: string[] = [
-  "Topic 1 — TBD",
-  "Topic 2 — TBD",
-  "Topic 3 — TBD",
-  "Topic 4 — TBD",
-];
-
-/* ---------------- Schedule ---------------- */
-
-/** 開催地（ピッツバーグ）の現地時刻で記入。他都市の時刻は自動計算されます */
-export const schedule = {
-  date: "2027-05-10",
-  hostTimeZone: "America/New_York",
-  hostUtcOffset: "-04:00",
-  start: "09:00",
-  end: "15:00",
-  items: [
+export const topics = {
+  intro: [
+    "Technology-Mediated Motor Learning workshop is an interactive workshop aimed at bringing together researchers, practitioners, and designers interested in how emerging technologies can support people in learning, refining, and transferring motor skills.",
+    "We invite contributions from researchers working with multimodal feedback, wearables, mixed reality, robotics, AI, embodied interaction, and related technologies across movement domains such as sports, rehabilitation, music, dance, and everyday activities.",
+    "The workshop will focus on four interconnected questions:",
+  ],
+  questions: [
     {
-      start: "09:00",
-      end: "09:20",
-      title: "Introducing the Workshop",
-      description: "On-boarding and Introduction",
+      name: "Embodied and experiential learning",
+      question: "How do perception, emotion, motivation, and lived experience shape motor learning?",
     },
-    { start: "09:20", end: "10:30", title: "Position Paper Presentations", description: "TBD" },
-    { start: "10:30", end: "10:45", title: "Coffee Break", description: "" },
-    { start: "10:45", end: "12:00", title: "Session 2", description: "TBD" },
-    { start: "12:00", end: "13:00", title: "Lunch Break", description: "" },
-    { start: "13:00", end: "14:30", title: "Session 3", description: "TBD" },
-    { start: "14:30", end: "15:00", title: "Wrap-up and Closing", description: "TBD" },
+    {
+      name: "Feedback and technological assistance",
+      question:
+        "What and how much information and assistance should technology provide, and how should these change as learners develop?",
+    },
+    {
+      name: "Transfer across skills and contexts",
+      question: "What can transfer across movements, activities, and domains?",
+    },
+    {
+      name: "Evaluation and translation",
+      question:
+        "How can lasting motor learning be evaluated and supported beyond controlled laboratory studies?",
+    },
   ],
 };
 
+/* ---------------- Schedule ---------------- */
+
+export type ScheduleItem = {
+  /** ワークショップ開始からの経過時間 "HH:MM" */
+  start: string;
+  end: string;
+  title: string;
+  /** 補足の文章（1行＝1段落） */
+  description?: string[];
+  /** ブレイクアウトのテーマ */
+  themes?: { name: string; question: string }[];
+  /** 斜体で表示される補足 */
+  note?: string;
+};
+
+export const schedule = {
+  /**
+   * 開始時刻が決まったら "09:00" のように設定してください。
+   * null のままだと、開始からの経過時間（00:00 起点）で表示されます。
+   */
+  startTime: null as string | null,
+  items: [
+    {
+      start: "00:00",
+      end: "00:10",
+      title: "Opening: Introducing the Workshop",
+      description: ["5 minutes onboarding; 5 minutes introduction to workshop."],
+    },
+    {
+      start: "00:10",
+      end: "00:30",
+      title: "Explore: Research Demonstrations",
+      description: [
+        "Hands-on exploration of participant prototypes and technologies for movement and motor learning.",
+      ],
+    },
+    {
+      start: "00:30",
+      end: "00:45",
+      title: "Lightning Talks and Q&A",
+      description: [
+        "Short presentations introducing half the participants' position papers, work, experiences, and questions.",
+      ],
+    },
+    {
+      start: "00:45",
+      end: "00:50",
+      title: "Frame the Questions and Form Groups",
+      description: ["Introduction to the four workshop questions and formation of breakout groups."],
+    },
+    {
+      start: "00:50",
+      end: "01:30",
+      title: "Breakout Session #1: Learning in the Interaction",
+      themes: [
+        {
+          name: "Theme 1 — Embodied and experiential learning",
+          question: "How do perception, emotion, motivation, and lived experience shape motor learning?",
+        },
+        {
+          name: "Theme 2 — Feedback and technological assistance",
+          question: "What information should technology provide, and how should assistance evolve with learning?",
+        },
+      ],
+      description: ["30 minutes group discussion; 5 minutes sharing key insights; 5 minutes plenary discussion."],
+      note: "Groups will identify 2–3 key challenges or tensions and develop one concrete research question or design opportunity.",
+    },
+    { start: "01:30", end: "02:30", title: "Break and Networking" },
+    {
+      start: "02:30",
+      end: "02:45",
+      title: "Lightning Talks and Q&A",
+      description: [
+        "Short presentations from the remaining participants about additional perspectives, movement domains, and technologies.",
+      ],
+    },
+    {
+      start: "02:45",
+      end: "03:25",
+      title: "Breakout Session #2: Learning Beyond the Interaction",
+      themes: [
+        {
+          name: "Theme 3 — Transfer across skills and contexts",
+          question: "What can transfer across movements, domains, and contexts?",
+        },
+        {
+          name: "Theme 4 — Evaluation and translation",
+          question:
+            "How can lasting learning be evaluated and translated beyond controlled laboratory settings?",
+        },
+      ],
+      description: ["30 minutes group discussion; 5 minutes sharing key insights; 5 minutes plenary discussion."],
+      note: "Groups will identify 2–3 cross-domain opportunities or methodological challenges and develop one concrete direction for future research.",
+    },
+    {
+      start: "03:25",
+      end: "04:00",
+      title: "Synthesize and Conclude",
+      description: [
+        "20 minutes connecting insights across groups and identifying recurring challenges and opportunities.",
+        "15 minutes defining open research questions, future collaborations, and next steps.",
+      ],
+    },
+  ] as ScheduleItem[],
+};
 
 /* ---------------- Organizers ---------------- */
 
@@ -92,13 +195,31 @@ export const motivationQuestions = {
 };
 
 export const organizers: Organizer[] = [
-  { name: "Nihar Sabnis", url: "https://sms.hest.ethz.ch/the-group/team/nihar-sabnis.html", photo: "/images/organizers/nihar-sabnis.jpg", role: "Postdoc", affiliation: "ETH Zürich" },
+  {
+    name: "Nihar Sabnis",
+    role: "Postdoc",
+    affiliation: "ETH Zürich",
+    photo: "/images/organizers/nihar-sabnis.jpg",
+    url: "https://sms.hest.ethz.ch/the-group/team/nihar-sabnis.html",
+    motivation: {
+      excites: [
+        "On a more everyday research level, I am struggling with mapping the technology design space with the movements to be taught, because of the sheer number of possibilities for both aspects.",
+        "On a broader level, I am interested in designing technology which feels like a part of the human body and not apart from it, and to use such technology to create lasting impacts beyond the interaction level in the lives of people.",
+        "I am also curious to design technologies for motor learning while taking into consideration the perceptual mechanisms underlying our sensorimotor system. For example, when we walk on different surfaces, our gait pattern changes based on the surface we are walking on. Can we then create artificial surfaces to improve someone's gait pattern?",
+      ],
+      personal: [
+        "Bringing together researchers and labs working in technology-mediated motor learning fields in isolation.",
+        "Beyond the initial interaction through the medium of a workshop, I also want to provide a space for long-term discussions, collaborations and creating a platform.",
+        "Also it is important for me to share the challenges and co-explore novel technologies and their impact on motor learning itself.",
+      ],
+    },
+  },
   {
     name: "Yuto Suzuki",
-    url: "https://yutosuzuki.vercel.app/",
-    photo: "/images/organizers/yuto-suzuki.jpg",
     role: "Ph.D. Candidate",
     affiliation: "Hokkaido University",
+    photo: "/images/organizers/yuto-suzuki.jpg",
+    url: "https://yutosuzuki.vercel.app/",
     motivation: {
       excites: [
         "How can specific HCI artefacts developed with emerging technologies be transferred to other movement domains? For example, how could a technology that visualizes the difference between a golfer's posture and the correct swing posture be applied beyond golf?",
@@ -112,30 +233,143 @@ export const organizers: Organizer[] = [
     },
   },
   {
-    name: "Ana Tajadura-Jiménez", url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234", photo: "/images/organizers/ana-tajadura-jimenez.jpg",
+    name: "Ana Tajadura-Jiménez",
     role: "Associate Professor",
     affiliation: "Universidad Carlos III de Madrid / University College London",
+    photo: "/images/organizers/ana-tajadura-jimenez.jpg",
+    url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234",
   },
-  { name: "Jun Nishida", url: "https://junis.sakura.ne.jp/wp/", photo: "/images/organizers/jun-nishida.jpg", role: "Assistant Professor", affiliation: "University of Maryland" },
-  { name: "Donald Degraen", url: "https://donalddegraen.com/", photo: "/images/organizers/donald-degraen.jpg", role: "Lecturer / Assistant Professor", affiliation: "University of Canterbury" },
-  { name: "Laia Turmo Vidal", url: "https://laiatv.github.io/", photo: "/images/organizers/laia-turmo-vidal.jpg", role: "Assistant Professor", affiliation: "KTH Royal Institute of Technology" },
-  { name: "Don Samitha Elvitigala", url: "https://samithaelvitigala.com/", photo: "/images/organizers/don-samitha-elvitigala.jpg", role: "Lecturer / Assistant Professor", affiliation: "Monash University" },
-  { name: "Robert Riener", url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html", photo: "/images/organizers/robert-riener.jpg", role: "Professor", affiliation: "ETH Zürich" },
-  { name: "José Manuel Vega-Cebrián", url: "https://imbodylab.com/2022/07/26/jose-manuel-vega-cebrian/", photo: "/images/organizers/jose-manuel-vega-cebrian.jpg", role: "Ph.D. Candidate", affiliation: "Universidad Carlos III de Madrid" },
-  { name: "Peter Wolf", url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html", photo: "/images/organizers/peter-wolf.jpg", role: "Senior Scientist", affiliation: "ETH Zürich" },
+  {
+    name: "Jun Nishida",
+    role: "Assistant Professor",
+    affiliation: "University of Maryland",
+    photo: "/images/organizers/jun-nishida.jpg",
+    url: "https://junis.sakura.ne.jp/wp/",
+    motivation: {
+      excites: [
+        "The first is what enables motor skills to transfer from one person to another, and how this will impact our society and well-being. The factors that make such transfer effective remain unclear.",
+        "The second is how technology can support motor learning that remains motivating over the long term. Most systems are evaluated in short sessions based on performance, while real skill acquisition requires sustained engagement.",
+      ],
+      personal: [],
+    },
+  },
+  {
+    name: "Donald Degraen",
+    role: "Lecturer / Assistant Professor",
+    affiliation: "University of Canterbury",
+    photo: "/images/organizers/donald-degraen.jpg",
+    url: "https://donalddegraen.com/",
+    motivation: {
+      excites: [
+        "I have two main topics that emphasize motor learning.",
+        "Tactile Motor Learning: My main line of research focused on extending what haptic experiences we can create and on building the methods and tools to design such experiences. Recently, I have been working on applying these insights in learning contexts, e.g., by designing 3D-printed phantoms for training palpation procedures.",
+        "Experiential Interaction Design: Another line of work that I have recently started to explore is on the experiential aspects of immersive experiences and interaction design. For example, we are exploring if we can motivate people better during training and practise by transferring the positive effects of exercise (e.g., heavy exercise makes you sweat, therefore you associate sweat with positive performance, so we ask whether you will be more motivated if we make you sweat artificially). A similar line of work is a recently accepted grant proposal where we will look into the experiential aspects of extreme environments (Antarctica).",
+      ],
+      personal: [
+        "My main motivation for co-organizing this workshop is because of my work's focus on immersive experiences that include the sense of touch.",
+      ],
+    },
+  },
+  {
+    name: "Laia Turmo Vidal",
+    role: "Assistant Professor",
+    affiliation: "KTH Royal Institute of Technology",
+    photo: "/images/organizers/laia-turmo-vidal.jpg",
+    url: "https://laiatv.github.io/",
+    motivation: {
+      excites: [
+        "How to design for motor learning/control in contexts of altered embodiments, such as after injuries and acquired disability, illness, or aging.",
+      ],
+      personal: [
+        "Meet interesting people with whom to potentially collaborate.",
+      ],
+    },
+  },
+  {
+    name: "Don Samitha Elvitigala",
+    role: "Lecturer / Assistant Professor",
+    affiliation: "Monash University",
+    photo: "/images/organizers/don-samitha-elvitigala.jpg",
+    url: "https://samithaelvitigala.com/",
+    motivation: {
+      excites: [
+        "How can we transition from explicit, visual feedback to subtle, implicit multisensory cues, embedded directly into everyday attire, to train proper motor patterns without increasing cognitive load or disrupting natural movement flow?",
+      ],
+      personal: [
+        "I want to connect with researchers spanning biomechanics, sports science, and embodied HCI to explore how low-profile, multisensory feedback primitives (haptics, spatial audio, and smart textiles) can be standardized for real-world motor skill acquisition beyond controlled lab environments.",
+      ],
+    },
+  },
+  {
+    name: "Robert Riener",
+    role: "Professor",
+    affiliation: "ETH Zürich",
+    photo: "/images/organizers/robert-riener.jpg",
+    url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html",
+  },
+  {
+    name: "José Manuel Vega-Cebrián",
+    role: "Ph.D. Candidate",
+    affiliation: "Universidad Carlos III de Madrid",
+    photo: "/images/organizers/jose-manuel-vega-cebrian.jpg",
+    url: "https://imbodylab.com/2022/07/26/jose-manuel-vega-cebrian/",
+    motivation: {
+      excites: [
+        "I am interested in exploring what is the minimum amount of technology that is needed for a meaningful interaction to support motor learning. I am curious about how digital technologies and their affordances interact with the affordances of non-digital objects for movement (sports or rehabilitation equipment, props, crafting materials, etc.).",
+      ],
+      personal: [
+        "I would like to extend my network of people working with movement and computing, while also gaining a better understanding of the different perspectives and approaches that are current in the field.",
+      ],
+    },
+  },
+  {
+    name: "Peter Wolf",
+    role: "Senior Scientist",
+    affiliation: "ETH Zürich",
+    photo: "/images/organizers/peter-wolf.jpg",
+    url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html",
+    motivation: {
+      excites: [
+        "I like to hear about motor learning (i.e. lasting effects once feedback is no longer present) rather than 'just' performance enhancement (i.e. whether feedback improves current performance).",
+        "I love overviews of different types of feedback: how can learning tasks be categorised, and which type of feedback works best for learners with different levels of expertise? We have done one on haptic feedback. And in what form can — or could — typical learning approaches be implemented in virtual trainers?",
+        "I tend to prefer presentations that allow for generalisation rather than focusing exclusively on a very specific study with hardly transferable results.",
+      ],
+      personal: [],
+    },
+  },
   {
     name: "Xiao Xiao",
+    role: "Professor",
+    affiliation: "De Vinci Higher Education",
     photo: "/images/organizers/xiao-xiao.jpg",
     url: "https://scholar.google.com/citations?user=tbqqAOYAAAAJ&hl=en",
-    role: "Professor",
-    affiliation: "De Vinci Higher Education", // 要確認
+    motivation: {
+      excites: [
+        "I am particularly interested in ways of bridging embodied and data-driven ways of knowing. Part of it is understanding ways of thinking/doing that allow people who get to the top of their game in different disciplines, and creating technologies that enable other people to experience these ways of thinking/doing. Another thing that interests me is finding the commonalities of motor learning across domains, and ways of \"transferring\" motor capacities from one domain to another.",
+        "Another thing is about surprising \"superpowers\" that you gain from getting really good at specific motor skills that apply beyond the original application domain. One example is that through learning to play the theremin, I got a lot better at imitating bird sounds and became more sensitive to the musicality of speech and everyday sounds. This is a gain in perception more than in pure motor output.",
+      ],
+      personal: [
+        "A big part of it is understanding the cartography of research in motor learning and seeing how to position my interests. I haven't really been publishing my work explicitly as motor learning, and a main motivation is about how to frame what I am doing in a way that can be shared with the community.",
+      ],
+    },
   },
   {
     name: "Joanna Bergström",
-    photo: "/images/organizers/joanna-bergstrom.jpg",
-    url: "https://scholar.google.com/citations?user=NL1Q89sAAAAJ&hl=en",
     role: "Associate Professor",
     affiliation: "University of Copenhagen",
+    photo: "/images/organizers/joanna-bergstrom.jpg",
+    url: "https://scholar.google.com/citations?user=NL1Q89sAAAAJ&hl=en",
+    motivation: {
+      excites: [
+        "For me, this is a two-way interest.",
+        "First, motor learning → HCI. My ERC project uses motor learning theories, models, and paradigms, as well as more specific findings, mostly from neuroscience, to develop interaction techniques, with a current focus on VR. I think this knowledge can help us better design and evaluate VR mapping techniques (the mappings between physical and virtual movement, like resized grasping, gain functions for walking, or one hand controlling several virtual hands), because using any such mapping always requires motor learning, at minimum adaptation. Right now there's a lot of work to do just in creating awareness of the existing literature that's directly relevant to most interaction techniques, and in translating that knowledge into something usable for HCI research.",
+        "Second, HCI → motor learning. I think technologies like VR and haptics can also help us understand human motor learning itself — in neuroscience, psychology, sports science. They let us study behavior in settings that conventional experimental setups can't easily create. De novo learning, for instance, shows up in infants, in learning to use a new neural prosthesis, in motor rehabilitation after stroke, or in learning to use a tool like a bike — but those real-world cases are hard to control, whereas VR can emulate them under controlled conditions.",
+      ],
+      personal: [
+        "I'm not a big fan of grand-challenges papers, as they can end up as a patchwork that's hard to actually use for research. But I do see the value in connecting a broad, scattered space of knowledge, which is basically what I described above too. The tricky part is that the motor learning field itself is already like that.",
+        "I'd say I sit more in the basics-focused community, on the mechanisms of motor learning, so it'll be interesting to connect at this workshop with the applied side too, and robotics is something I'd love to connect more with. So: mapping this landscape more clearly, both in my own head and for HCI research, and connecting with different kinds of motor-learning researchers, would be my answer. I genuinely don't know yet what form of output (a paper or something else) would actually be useful here, and I'd be curious what the rest of you think.",
+      ],
+    },
   },
 ];
 

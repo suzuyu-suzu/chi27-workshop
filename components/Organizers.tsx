@@ -112,8 +112,12 @@ export default function Organizers() {
           <AccordionDetails sx={{ px: 0, pt: 0, pb: 2, pl: { xs: 0, sm: 9 } }}>
             {o.motivation ? (
               <>
-                <Answers question={motivationQuestions.excites} items={o.motivation.excites} />
-                <Answers question={motivationQuestions.personal} items={o.motivation.personal} />
+                {o.motivation.excites.length > 0 && (
+                  <Answers question={motivationQuestions.excites} items={o.motivation.excites} />
+                )}
+                {o.motivation.personal.length > 0 && (
+                  <Answers question={motivationQuestions.personal} items={o.motivation.personal} />
+                )}
               </>
             ) : (
               <Typography sx={{ color: "text.secondary" }}>Coming soon.</Typography>

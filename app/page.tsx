@@ -44,16 +44,20 @@ export default function Home() {
             </Box>
 
             <Section id="topics" title="What are the topics covered?">
-              <Box component="ul" sx={{ m: 0, pl: 3, "& li::marker": { color: colors.yellow } }}>
-                {topics.map((t) => (
-                  <Typography component="li" key={t} sx={{ mb: 1 }}>
-                    {t}
+              <Paragraphs items={topics.intro} />
+              <Box component="ol" sx={{ mt: 2, mb: 0, pl: 3, "& li::marker": { color: colors.yellow, fontWeight: 700 } }}>
+                {topics.questions.map((q) => (
+                  <Typography component="li" key={q.name} sx={{ mb: 1.5 }}>
+                    <Box component="span" sx={{ fontWeight: 700 }}>
+                      {q.name}:
+                    </Box>{" "}
+                    {q.question}
                   </Typography>
                 ))}
               </Box>
             </Section>
 
-            <Section id="schedule" title="1-Day Workshop Schedule">
+            <Section id="schedule" title="Half-Day Workshop Schedule">
               <Schedule />
             </Section>
 
