@@ -1,6 +1,8 @@
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import AddIcon from "@mui/icons-material/Add";
 import { faq } from "@/content/site";
@@ -34,7 +36,24 @@ export default function Faq() {
             <Typography sx={{ fontWeight: 700, fontSize: "1.1rem" }}>{item.question}</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ px: 0, pt: 0, pb: 3 }}>
-            <Typography sx={{ color: "text.secondary" }}>{item.answer}</Typography>
+            <Stack spacing={1.5}>
+              {item.answer.map((paragraph, j) => (
+                <Typography key={j} sx={{ color: "text.secondary" }}>
+                  {paragraph}
+                </Typography>
+              ))}
+              {item.links?.map((l) => (
+                <Link
+                  key={l.url + l.label}
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ color: colors.yellow, fontWeight: 700, width: "fit-content" }}
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </Stack>
           </AccordionDetails>
         </Accordion>
       ))}

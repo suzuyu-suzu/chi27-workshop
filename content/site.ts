@@ -38,8 +38,7 @@ export const when = {
 
 export const topics = {
   intro: [
-    "Technology-Mediated Motor Learning workshop is an interactive workshop aimed at bringing together researchers, practitioners, and designers interested in how emerging technologies can support people in learning, refining, and transferring motor skills.",
-    "We invite contributions from researchers working with multimodal feedback, wearables, mixed reality, robotics, AI, embodied interaction, and related technologies across movement domains such as sports, rehabilitation, music, dance, and everyday activities.",
+    "Technology-Mediated Motor Learning workshop is an interactive workshop aimed at bringing together researchers, practitioners, and designers interested in how emerging technologies can support people in learning, refining, and transferring motor skills. We invite contributions from researchers working with multimodal feedback, wearables, mixed reality, robotics, AI, embodied interaction, and related technologies across movement domains such as sports, rehabilitation, music, dance, and everyday activities.",
     "The workshop will focus on four interconnected questions:",
   ],
   questions: [
@@ -448,9 +447,47 @@ export const imageCredits: ImageCredit[] = [
 
 /* ---------------- FAQ ---------------- */
 
-export const faq: { question: string; answer: string }[] = [
-  { question: "How do I attend the workshop?", answer: LOREM },
-  { question: "Can I participate remotely?", answer: LOREM },
-  { question: "Do I need to register for CHI'27?", answer: LOREM },
-  { question: "How do I submit a position paper?", answer: LOREM },
+export type FaqItem = {
+  question: string;
+  /** 1行＝1段落 */
+  answer: string[];
+  /** 回答の下に表示されるリンク */
+  links?: { label: string; url: string }[];
+};
+
+export const faq: FaqItem[] = [
+  {
+    question: "How to attend the workshop?",
+    answer: [
+      "The Technology-Mediated Motor Learning workshop takes place in person at CHI 2027, and you can register for the event by reserving your spot during CHI 2027 registration.",
+    ],
+  },
+  {
+    question: "How to apply as a participant?",
+    answer: ["Participants can apply by submitting the Google form."],
+    links: [{ label: "Submission form (TBD)", url: "#" }],
+  },
+  {
+    question: "What should be in the document submitted by the participants?",
+    answer: [
+      "If you are interested in participation, please submit a two to three-page position paper using the publication version of the ACM Master Article Template and set the document class to \\documentclass[sigconf]{acmart}.",
+      "We encourage your position paper to focus on at least one of the four questions discussed during the workshop — (a) embodied and experiential learning, (b) feedback and technological assistance, (c) transfer across skills and contexts, or (d) evaluation and translation — or to present another area you believe should be discussed.",
+      "The paper should briefly introduce yourself and give an overview of what you believe is important and needs discussion in your chosen area, and you are highly encouraged to present your own work in this context.",
+    ],
+    links: [{ label: "CHI 2027 publication formats", url: "https://chi2027.acm.org/" }],
+  },
+  {
+    question: "Will the submitted paper be published or displayed on the website?",
+    answer: [
+      "The submitted paper will be only displayed on the workshop website.",
+    ],
+  },
+  {
+    question: "Do I need to attend the workshop after submitting a position paper?",
+    answer: ["At least one author of an accepted position paper must attend the workshop in person."],
+  },
+  {
+    question: "What should I do if I am facing a problem during submission?",
+    answer: ["Please send an email to TBD with clear details about the issue you are facing."],
+  },
 ];
