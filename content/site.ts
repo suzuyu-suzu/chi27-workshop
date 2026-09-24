@@ -374,7 +374,14 @@ export const organizers: Organizer[] = [
 
 /* ---------------- Call for Participation ---------------- */
 
-export const callForParticipation: string[] = [LOREM, LOREM];
+export const callForParticipation = {
+  paragraphs: [
+    "Participants are invited to submit a 3–6 page position paper using the ACM Master Article Template. Use the publication version of the template and set the document class to \\documentclass[sigconf]{acmart}.",
+    "Submissions may present relevant research, ongoing work, design approaches, methodological perspectives, or open questions related to technology-mediated motor learning. Position papers should briefly introduce the authors' background and highlight one or more questions or challenges they would like to discuss during the workshop.",
+    "Accepted papers will be used to inform breakout discussions, and authors will have a choice to have their accepted paper published on the workshop website.",
+  ],
+  links: [{ label: "ACM Master Article Template", url: "https://chi2025.acm.org/chi-publication-formats/" }],
+};
 
 /* ---------------- Position Papers ---------------- */
 
@@ -470,7 +477,7 @@ export const faq: FaqItem[] = [
   {
     question: "What should be in the document submitted by the participants?",
     answer: [
-      "If you are interested in participation, please submit a two to three-page position paper using the publication version of the ACM Master Article Template and set the document class to \\documentclass[sigconf]{acmart}.",
+      "If you are interested in participation, please submit a 3–6 page position paper using the publication version of the ACM Master Article Template and set the document class to \\documentclass[sigconf]{acmart}.",
       "We encourage your position paper to focus on at least one of the four questions discussed during the workshop — (a) embodied and experiential learning, (b) feedback and technological assistance, (c) transfer across skills and contexts, or (d) evaluation and translation — or to present another area you believe should be discussed.",
       "The paper should briefly introduce yourself and give an overview of what you believe is important and needs discussion in your chosen area, and you are highly encouraged to present your own work in this context.",
     ],

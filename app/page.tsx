@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Faq from "@/components/Faq";
@@ -66,7 +67,18 @@ export default function Home() {
             </Section>
 
             <Section id="call-for-participation" title="Call for Participation">
-              <Paragraphs items={callForParticipation} />
+              <Paragraphs items={callForParticipation.paragraphs} />
+              {callForParticipation.links.map((l) => (
+                <Link
+                  key={l.url}
+                  href={l.url}
+                  target="_blank"
+                  rel="noopener"
+                  sx={{ display: "inline-block", mt: 2, color: colors.yellow, fontWeight: 700 }}
+                >
+                  {l.label}
+                </Link>
+              ))}
             </Section>
 
             <Section id="position-papers" title="Position Papers">
