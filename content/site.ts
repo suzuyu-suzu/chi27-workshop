@@ -286,7 +286,7 @@ export const organizers: Organizer[] = [
   },
   {
     name: "Don Samitha Elvitigala",
-    role: "Lecturer / Assistant Professor",
+    role: "Senior Lecturer/Assistant Professor",
     affiliation: "Monash University",
     photo: "/images/organizers/don-samitha-elvitigala.jpg",
     url: "https://samithaelvitigala.com/",
