@@ -1,6 +1,6 @@
-# The Future of Technology-Mediated Motor Learning @ CHI2027
+# From Interaction to Learning: Technology-Mediated Motor Learning in HCI @ CHI2027
 
-This repository hosts the code for the website of the [The Future of Technology-Mediated Motor Learning](https://suzuyu-suzu.github.io/chi27-workshop/) workshop at the [CHI 2027](https://chi2027.acm.org/) conference.
+This repository hosts the code for the website of the [From Interaction to Learning: Technology-Mediated Motor Learning in HCI](https://suzuyu-suzu.github.io/chi27-workshop/) workshop at the [CHI 2027](https://chi2027.acm.org/) conference.
 
 ## Abstract
 

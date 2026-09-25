@@ -14,7 +14,7 @@ export const images = {
 
 export const site = {
   conference: "CHI'27",
-  title: "The Future of Technology-Mediated Motor Learning",
+  title: "From Interaction to Learning: Technology-Mediated Motor Learning in HCI",
   dateBadge: "10 MAY 2027",
   designer: "Yuto Suzuki",
   designerUrl: "https://yutosuzuki.vercel.app/",
@@ -238,7 +238,7 @@ export const organizers: Organizer[] = [
     photo: "/images/organizers/ana-tajadura-jimenez.jpg",
     url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234",
     motivation: {
-      excites: ["Not just one question! I've put down three:",
+      excites: [
         "1.How the brain integrates bodily signals through sensorimotor loops, and what role body perception (and its distortions) plays in motor learning. This is something sensory technologies let us study, to advance basic neuroscience.", 
         "2. How to design technologies that transform body perception to support motor learning, specifically looking at benefits for health and wellbeing.", 
         "3. How to make (sensori)motor learning hold up in everyday, real-world use of these technologies, not just in the lab."
