@@ -53,33 +53,9 @@ export default function Hero() {
           </Typography>
           <Typography
             variant="h1"
-            sx={{
-              fontSize: { xs: "2.1rem", sm: "2.8rem", md: "2.2rem", lg: "2.8rem" },
-              maxWidth: { xs: 640, md: 760 },
-              mx: { xs: "auto", md: 0 },
-            }}
+            sx={{ fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.4rem", lg: "3.9rem" }, maxWidth: 640, mx: { xs: "auto", md: 0 } }}
           >
-            {/* 狭い画面: ふつうの本文と同じ扱い */}
-            <Box component="span" sx={{ display: { xs: "inline", md: "none" } }}>
-              {site.titleLead}{" "}
-            </Box>
-            {/* 広い画面: 1行に収め、単語を等間隔に広げて横幅いっぱいに見せる */}
-            <Box
-              component="span"
-              sx={{
-                display: { xs: "none", md: "flex" },
-                justifyContent: "space-between",
-                letterSpacing: "0.01em",
-                mb: 0.5,
-              }}
-            >
-              {site.titleLead.split(" ").map((word) => (
-                <Box component="span" key={word}>
-                  {word}
-                </Box>
-              ))}
-            </Box>
-            {site.titleRest}
+            {site.title}
           </Typography>
           <Box
             sx={{
@@ -104,7 +80,7 @@ export default function Hero() {
             position: "relative",
             zIndex: 2,
             flexShrink: 0,
-            width: { xs: "86%", sm: "62%", md: "38%" },
+            width: { xs: "86%", sm: "62%", md: "46%" },
             maxWidth: 600,
             transform: { xs: "translateY(12%)", md: "translateY(10%)" },
             mt: { md: 4 },
