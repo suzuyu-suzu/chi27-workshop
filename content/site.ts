@@ -385,6 +385,24 @@ export const organizers: Organizer[] = [
       ],
     },
   },
+  {
+    name: "Elena Márquez Segura",
+    role: "Assistant Professor",
+    affiliation: "Universidad Carlos III de Madrid",
+    photo: "/images/organizers/elena-marquez-segura.jpg",
+    url: "https://imbodylab.com/2026/01/27/elena-marquez-segura/",
+    motivation: {
+      excites: [
+        "I am interested in how the presence of technology shapes attention and experience during movement learning. Sometimes receding into the background and becoming almost transparent in action, but at other times we may deliberately want it highly noticeable: a dramatic sound, celebratory music, a vibration, or a visual effect can amplify a movement and transform it into a moment of performance.",
+        "What interests me is that technological prominence does not map straightforwardly onto attentional focus or integration. A highly salient cue may still feel tightly integrated with one's movement; an external sound may orient attention toward an audience, evoke the presence of a coach, or intensify awareness of the bodily qualities that supported the action. Conversely, subtle technology may remain largely unnoticed while strongly shaping where attention goes.",
+        "I would like to explore how we can design across these different degrees of technological transparency, prominence, and integration, and how they alter what learners attend to and how movement is experienced. When should technology disappear into action, when should it become deliberately foregrounded, and how can both support compelling and effective movement learning?",
+      ],
+      personal: [
+        "I would like to use the workshop to connect the different ways this group approaches motor learning—from mechanisms of adaptation, feedback, transfer and body perception to embodied, experiential and real-world perspectives on movement. In particular, I am interested in developing a richer vocabulary for understanding how technology shapes attention and bodily experience during learning, beyond asking only whether it improves performance or retention.",
+        "I would also like to explore whether there are design principles that cut across modalities and movement domains: e.g., when technology should be perceptually prominent or transparent, when it should guide attention, and when it can become integrated into the experience of moving. I am particularly interested in bringing perspectives from embodied interaction, soma design, theatre and dramaturgy into dialogue with motor-learning research, and seeing how concepts such as timing, staging, foregrounding and performance might extend how we think about technology-mediated learning.",
+      ],
+    },
+  },
 ];
 
 /* ---------------- Call for Participation ---------------- */
