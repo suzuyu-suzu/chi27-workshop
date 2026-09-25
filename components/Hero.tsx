@@ -53,7 +53,11 @@ export default function Hero() {
           </Typography>
           <Typography
             variant="h1"
-            sx={{ fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.4rem", lg: "3.9rem" }, maxWidth: 640, mx: { xs: "auto", md: 0 } }}
+            sx={{
+              fontSize: { xs: "2.1rem", sm: "2.8rem", md: "2.2rem", lg: "2.8rem" },
+              maxWidth: { xs: 640, md: 760 },
+              mx: { xs: "auto", md: 0 },
+            }}
           >
             {/* 狭い画面: ふつうの本文と同じ扱い */}
             <Box component="span" sx={{ display: { xs: "inline", md: "none" } }}>
@@ -65,7 +69,6 @@ export default function Hero() {
               sx={{
                 display: { xs: "none", md: "flex" },
                 justifyContent: "space-between",
-                fontSize: { md: "0.62em" },
                 letterSpacing: "0.01em",
                 mb: 0.5,
               }}
@@ -101,7 +104,7 @@ export default function Hero() {
             position: "relative",
             zIndex: 2,
             flexShrink: 0,
-            width: { xs: "86%", sm: "62%", md: "46%" },
+            width: { xs: "86%", sm: "62%", md: "38%" },
             maxWidth: 600,
             transform: { xs: "translateY(12%)", md: "translateY(10%)" },
             mt: { md: 4 },
