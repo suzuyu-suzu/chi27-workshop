@@ -237,6 +237,14 @@ export const organizers: Organizer[] = [
     affiliation: "Universidad Carlos III de Madrid / University College London",
     photo: "/images/organizers/ana-tajadura-jimenez.jpg",
     url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234",
+    motivation: {
+      excites: ["Not just one question! I've put down three:",
+        "1.How the brain integrates bodily signals through sensorimotor loops, and what role body perception (and its distortions) plays in motor learning. This is something sensory technologies let us study, to advance basic neuroscience.", 
+        "2. How to design technologies that transform body perception to support motor learning, specifically looking at benefits for health and wellbeing.", 
+        "3. How to make (sensori)motor learning hold up in everyday, real-world use of these technologies, not just in the lab."
+      ],
+      personal: ["To create a multidisciplinary community to study and design together these technologies. A joint article mapping the field would be amazing!"],
+    },
   },
   {
     name: "Jun Nishida",
@@ -305,6 +313,13 @@ export const organizers: Organizer[] = [
     affiliation: "ETH Zürich",
     photo: "/images/organizers/robert-riener.jpg",
     url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html",
+    motivation: {
+      excites: [
+        "How to find responders that show an individual effect about motor learning in therapy",
+        "How to increase the effectiveness of motor learning significantly"
+        ],
+      personal: [],
+    }
   },
   {
     name: "José Manuel Vega-Cebrián",
@@ -330,7 +345,7 @@ export const organizers: Organizer[] = [
     motivation: {
       excites: [
         "I like to hear about motor learning (i.e. lasting effects once feedback is no longer present) rather than 'just' performance enhancement (i.e. whether feedback improves current performance).",
-        "I love overviews of different types of feedback: how can learning tasks be categorised, and which type of feedback works best for learners with different levels of expertise? We have done one on haptic feedback. And in what form can — or could — typical learning approaches be implemented in virtual trainers?",
+        "I love overviews of different types of feedback: how can learning tasks be categorised, and which type of feedback works best for learners with different levels of expertise? We have done [one on haptic feedback](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9513580&tag=1). And in what form can — or could — typical learning approaches be implemented in virtual trainers?",
         "I tend to prefer presentations that allow for generalisation rather than focusing exclusively on a very specific study with hardly transferable results.",
       ],
       personal: [],

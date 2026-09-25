@@ -10,6 +10,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import { motivationQuestions, organizers, type Organizer } from "@/content/site";
 import { asset } from "@/lib/asset";
 import { colors } from "@/theme/colors";
+import RichText from "./RichText";
 
 const Photo = ({ o, size }: { o: Organizer; size: { xs: number; md: number } }) => (
   <Avatar
@@ -36,7 +37,7 @@ const Answers = ({ question, items }: { question: string; items: string[] }) => 
     <Box component="ul" sx={{ m: 0, pl: 3, "& li::marker": { color: colors.pink } }}>
       {items.map((a, i) => (
         <Typography component="li" key={i} sx={{ mb: 1, color: "text.secondary" }}>
-          {a}
+          <RichText text={a} />
         </Typography>
       ))}
     </Box>
