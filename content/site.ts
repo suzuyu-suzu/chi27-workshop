@@ -15,6 +15,9 @@ export const images = {
 export const site = {
   conference: "CHI'27",
   title: "From Interaction to Learning: Technology-Mediated Motor Learning in HCI",
+  /** ヒーローの表示用。1行目（広い画面では横いっぱいに広げて表示）と2行目以降 */
+  titleLead: "From Interaction to Learning:",
+  titleRest: "Technology-Mediated Motor Learning in HCI",
   dateBadge: "10 MAY 2027",
   designer: "Yuto Suzuki",
   designerUrl: "https://yutosuzuki.vercel.app/",

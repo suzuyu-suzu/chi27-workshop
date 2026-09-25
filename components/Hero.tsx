@@ -55,7 +55,28 @@ export default function Hero() {
             variant="h1"
             sx={{ fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.4rem", lg: "3.9rem" }, maxWidth: 640, mx: { xs: "auto", md: 0 } }}
           >
-            {site.title}
+            {/* 狭い画面: ふつうの本文と同じ扱い */}
+            <Box component="span" sx={{ display: { xs: "inline", md: "none" } }}>
+              {site.titleLead}{" "}
+            </Box>
+            {/* 広い画面: 1行に収め、単語を等間隔に広げて横幅いっぱいに見せる */}
+            <Box
+              component="span"
+              sx={{
+                display: { xs: "none", md: "flex" },
+                justifyContent: "space-between",
+                fontSize: { md: "0.62em" },
+                letterSpacing: "0.01em",
+                mb: 0.5,
+              }}
+            >
+              {site.titleLead.split(" ").map((word) => (
+                <Box component="span" key={word}>
+                  {word}
+                </Box>
+              ))}
+            </Box>
+            {site.titleRest}
           </Typography>
           <Box
             sx={{
