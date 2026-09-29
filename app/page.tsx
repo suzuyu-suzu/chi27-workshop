@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
@@ -69,29 +68,17 @@ export default function Home() {
 
             <Section id="call-for-participation" title="Call for Participation">
               <Paragraphs items={callForParticipation.paragraphs} />
-              <Stack
-                direction={{ xs: "column", sm: "row" }}
-                spacing={2}
-                sx={{ mt: 4, alignItems: { xs: "stretch", sm: "center" } }}
-              >
-                {callForParticipation.links.map((l, i) => (
-                  <Button
+              <Stack spacing={1} sx={{ mt: 3, alignItems: "flex-start" }}>
+                {callForParticipation.links.map((l) => (
+                  <Link
                     key={l.url}
                     href={l.url}
                     target="_blank"
                     rel="noopener"
-                    variant={i === 0 ? "contained" : "outlined"}
-                    color={i === 0 ? "primary" : "inherit"}
-                    sx={{
-                      fontWeight: 700,
-                      textTransform: "none",
-                      px: 3,
-                      py: 1.25,
-                      ...(i === 0 ? { color: colors.navy } : { borderColor: "rgba(255,255,255,0.5)" }),
-                    }}
+                    sx={{ color: colors.yellow, fontWeight: 700 }}
                   >
                     {l.label}
-                  </Button>
+                  </Link>
                 ))}
               </Stack>
             </Section>
