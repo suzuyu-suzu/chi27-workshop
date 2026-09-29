@@ -413,7 +413,10 @@ export const callForParticipation = {
     "Submissions may present relevant research, ongoing work, design approaches, methodological perspectives, or open questions related to technology-mediated motor learning. Position papers should briefly introduce the authors' background and highlight one or more questions or challenges they would like to discuss during the workshop.",
     "Accepted papers will be used to inform breakout discussions, and authors will have a choice to have their accepted paper published on the workshop website.",
   ],
-  links: [{ label: "ACM Master Article Template", url: "https://chi2025.acm.org/chi-publication-formats/" }],
+  links: [
+    { label: "Submit your position paper", url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform" },
+    { label: "ACM Master Article Template", url: "https://chi2025.acm.org/chi-publication-formats/" },
+  ],
 };
 
 /* ---------------- Position Papers ---------------- */
@@ -505,7 +508,7 @@ export const faq: FaqItem[] = [
   {
     question: "How to apply as a participant?",
     answer: ["Participants can apply by submitting the Google form."],
-    links: [{ label: "Submission form (TBD)", url: "#" }],
+    links: [{ label: "Submission form", url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform" }],
   },
   {
     question: "What should be in the document submitted by the participants?",
