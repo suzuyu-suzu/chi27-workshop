@@ -60,6 +60,7 @@ export default function Hero() {
           <Box
             sx={{
               display: "flex",
+              flexDirection: { xs: "column", md: "row" },
               alignItems: "center",
               justifyContent: { xs: "center", md: "flex-start" },
               gap: { xs: 2, md: 4 },
@@ -94,29 +95,30 @@ export default function Hero() {
               textAlign: "center",
               flexShrink: 0,
               position: { xs: "static", md: "absolute" },
-              left: { md: 16, lg: 40 },
-              bottom: { md: -40 },
+              left: { md: 24, lg: 56 },
+              bottom: { md: -28 },
               zIndex: 4,
-              width: { xs: 168, md: 240, lg: 280 },
-              height: { xs: 168, md: 240, lg: 280 },
+              width: { xs: 250, md: 380, lg: 440 },
+              height: { xs: 175, md: 230, lg: 260 },
               // タブのアイコン（app/icon.svg）と同じ4点星
               backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
                 `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='${colors.pink}' d='M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z'/></svg>`,
               )}")`,
-              backgroundSize: "contain",
+              // 星を横長に引き伸ばす
+              backgroundSize: "100% 100%",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               color: colors.white,
               fontWeight: 700,
               lineHeight: 1.25,
-              fontSize: { xs: "0.75rem", md: "1.1rem" },
+              fontSize: { xs: "0.8rem", md: "1.05rem" },
               textDecoration: "none",
               transform: "rotate(-6deg)",
               transition: "transform 0.2s ease",
               "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
-            <Box component="span" sx={{ width: "46%" }}>
+            <Box component="span" sx={{ width: "40%" }}>
               {submission.label}
             </Box>
           </Box>
