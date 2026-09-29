@@ -97,7 +97,7 @@ export default function Hero() {
               flexShrink: 0,
               position: "absolute",
               left: { xs: 8, md: 16, lg: 40 },
-              bottom: { xs: -42, md: -40 },
+              bottom: { xs: -72, md: -60 },
               zIndex: 4,
               width: { xs: 168, md: 300, lg: 330 },
               height: { xs: 130, md: 215, lg: 235 },
