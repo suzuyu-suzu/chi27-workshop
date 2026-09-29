@@ -232,32 +232,18 @@ export const organizers: Organizer[] = [
     },
   },
   {
-    name: "Ana Tajadura-Jiménez",
-    role: "Associate Professor",
-    affiliation: "Universidad Carlos III de Madrid / University College London",
-    photo: "/images/organizers/ana-tajadura-jimenez.jpg",
-    url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234",
+    name: "Don Samitha Elvitigala",
+    role: "Senior Lecturer/Assistant Professor",
+    affiliation: "Monash University",
+    photo: "/images/organizers/don-samitha-elvitigala.jpg",
+    url: "https://samithaelvitigala.com/",
     motivation: {
       excites: [
-        "1.How the brain integrates bodily signals through sensorimotor loops, and what role body perception (and its distortions) plays in motor learning. This is something sensory technologies let us study, to advance basic neuroscience.", 
-        "2. How to design technologies that transform body perception to support motor learning, specifically looking at benefits for health and wellbeing.", 
-        "3. How to make (sensori)motor learning hold up in everyday, real-world use of these technologies, not just in the lab."
+        "How can we transition from explicit, visual feedback to subtle, implicit multisensory cues, embedded directly into everyday attire, to train proper motor patterns without increasing cognitive load or disrupting natural movement flow?",
       ],
-      personal: ["To create a multidisciplinary community to study and design together these technologies. A joint article mapping the field would be amazing!"],
-    },
-  },
-  {
-    name: "Jun Nishida",
-    role: "Assistant Professor",
-    affiliation: "University of Maryland",
-    photo: "/images/organizers/jun-nishida.jpg",
-    url: "https://junis.sakura.ne.jp/wp/",
-    motivation: {
-      excites: [
-        "The first is what enables motor skills to transfer from one person to another, and how this will impact our society and well-being. The factors that make such transfer effective remain unclear.",
-        "The second is how technology can support motor learning that remains motivating over the long term. Most systems are evaluated in short sessions based on performance, while real skill acquisition requires sustained engagement.",
+      personal: [
+        "I want to connect with researchers spanning biomechanics, sports science, and embodied HCI to explore how low-profile, multisensory feedback primitives (haptics, spatial audio, and smart textiles) can be standardized for real-world motor skill acquisition beyond controlled lab environments.",
       ],
-      personal: [],
     },
   },
   {
@@ -278,48 +264,52 @@ export const organizers: Organizer[] = [
     },
   },
   {
-    name: "Laia Turmo Vidal",
-    role: "Assistant Professor",
-    affiliation: "KTH Royal Institute of Technology",
-    photo: "/images/organizers/laia-turmo-vidal.jpg",
-    url: "https://laiatv.github.io/",
-    motivation: {
-      excites: [
-        "How to design for motor learning/control in contexts of altered embodiments, such as after injuries and acquired disability, illness, or aging.",
-      ],
-      personal: [
-        "Meet interesting people with whom to potentially collaborate.",
-      ],
-    },
-  },
-  {
-    name: "Don Samitha Elvitigala",
-    role: "Senior Lecturer/Assistant Professor",
-    affiliation: "Monash University",
-    photo: "/images/organizers/don-samitha-elvitigala.jpg",
-    url: "https://samithaelvitigala.com/",
-    motivation: {
-      excites: [
-        "How can we transition from explicit, visual feedback to subtle, implicit multisensory cues, embedded directly into everyday attire, to train proper motor patterns without increasing cognitive load or disrupting natural movement flow?",
-      ],
-      personal: [
-        "I want to connect with researchers spanning biomechanics, sports science, and embodied HCI to explore how low-profile, multisensory feedback primitives (haptics, spatial audio, and smart textiles) can be standardized for real-world motor skill acquisition beyond controlled lab environments.",
-      ],
-    },
-  },
-  {
-    name: "Robert Riener",
+    name: "Xiao Xiao",
     role: "Professor",
-    affiliation: "ETH Zürich",
-    photo: "/images/organizers/robert-riener.jpg",
-    url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html",
+    affiliation: "De Vinci Higher Education",
+    photo: "/images/organizers/xiao-xiao.jpg",
+    url: "https://scholar.google.com/citations?user=tbqqAOYAAAAJ&hl=en",
     motivation: {
       excites: [
-        "How to find responders that show an individual effect about motor learning in therapy",
-        "How to increase the effectiveness of motor learning significantly"
-        ],
+        "I am particularly interested in ways of bridging embodied and data-driven ways of knowing. Part of it is understanding ways of thinking/doing that allow people who get to the top of their game in different disciplines, and creating technologies that enable other people to experience these ways of thinking/doing. Another thing that interests me is finding the commonalities of motor learning across domains, and ways of \"transferring\" motor capacities from one domain to another.",
+        "Another thing is about surprising \"superpowers\" that you gain from getting really good at specific motor skills that apply beyond the original application domain. One example is that through learning to play the theremin, I got a lot better at imitating bird sounds and became more sensitive to the musicality of speech and everyday sounds. This is a gain in perception more than in pure motor output.",
+      ],
+      personal: [
+        "A big part of it is understanding the cartography of research in motor learning and seeing how to position my interests. I haven't really been publishing my work explicitly as motor learning, and a main motivation is about how to frame what I am doing in a way that can be shared with the community.",
+      ],
+    },
+  },
+  {
+    name: "Jun Nishida",
+    role: "Assistant Professor",
+    affiliation: "University of Maryland",
+    photo: "/images/organizers/jun-nishida.jpg",
+    url: "https://junis.sakura.ne.jp/wp/",
+    motivation: {
+      excites: [
+        "The first is what enables motor skills to transfer from one person to another, and how this will impact our society and well-being. The factors that make such transfer effective remain unclear.",
+        "The second is how technology can support motor learning that remains motivating over the long term. Most systems are evaluated in short sessions based on performance, while real skill acquisition requires sustained engagement.",
+      ],
       personal: [],
-    }
+    },
+  },
+  {
+    name: "Elena Márquez Segura",
+    role: "Assistant Professor",
+    affiliation: "Universidad Carlos III de Madrid",
+    photo: "/images/organizers/elena-marquez-segura.jpg",
+    url: "https://imbodylab.com/2026/01/27/elena-marquez-segura/",
+    motivation: {
+      excites: [
+        "I am interested in how the presence of technology shapes attention and experience during movement learning. Sometimes receding into the background and becoming almost transparent in action, but at other times we may deliberately want it highly noticeable: a dramatic sound, celebratory music, a vibration, or a visual effect can amplify a movement and transform it into a moment of performance.",
+        "What interests me is that technological prominence does not map straightforwardly onto attentional focus or integration. A highly salient cue may still feel tightly integrated with one's movement; an external sound may orient attention toward an audience, evoke the presence of a coach, or intensify awareness of the bodily qualities that supported the action. Conversely, subtle technology may remain largely unnoticed while strongly shaping where attention goes.",
+        "I would like to explore how we can design across these different degrees of technological transparency, prominence, and integration, and how they alter what learners attend to and how movement is experienced. When should technology disappear into action, when should it become deliberately foregrounded, and how can both support compelling and effective movement learning?",
+      ],
+      personal: [
+        "I would like to use the workshop to connect the different ways this group approaches motor learning—from mechanisms of adaptation, feedback, transfer and body perception to embodied, experiential and real-world perspectives on movement. In particular, I am interested in developing a richer vocabulary for understanding how technology shapes attention and bodily experience during learning, beyond asking only whether it improves performance or retention.",
+        "I would also like to explore whether there are design principles that cut across modalities and movement domains: e.g., when technology should be perceptually prominent or transparent, when it should guide attention, and when it can become integrated into the experience of moving. I am particularly interested in bringing perspectives from embodied interaction, soma design, theatre and dramaturgy into dialogue with motor-learning research, and seeing how concepts such as timing, staging, foregrounding and performance might extend how we think about technology-mediated learning.",
+      ],
+    },
   },
   {
     name: "José Manuel Vega-Cebrián",
@@ -337,35 +327,48 @@ export const organizers: Organizer[] = [
     },
   },
   {
-    name: "Peter Wolf",
-    role: "Senior Scientist",
-    affiliation: "ETH Zürich",
-    photo: "/images/organizers/peter-wolf.jpg",
-    url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html",
+    name: "Laia Turmo Vidal",
+    role: "Assistant Professor",
+    affiliation: "KTH Royal Institute of Technology",
+    photo: "/images/organizers/laia-turmo-vidal.jpg",
+    url: "https://laiatv.github.io/",
     motivation: {
       excites: [
-        "I like to hear about motor learning (i.e. lasting effects once feedback is no longer present) rather than 'just' performance enhancement (i.e. whether feedback improves current performance).",
-        "I love overviews of different types of feedback: how can learning tasks be categorised, and which type of feedback works best for learners with different levels of expertise? We have done [one on haptic feedback](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9513580&tag=1). And in what form can — or could — typical learning approaches be implemented in virtual trainers?",
-        "I tend to prefer presentations that allow for generalisation rather than focusing exclusively on a very specific study with hardly transferable results.",
+        "How to design for motor learning/control in contexts of altered embodiments, such as after injuries and acquired disability, illness, or aging.",
       ],
-      personal: [],
+      personal: [
+        "Meet interesting people with whom to potentially collaborate.",
+      ],
     },
   },
   {
-    name: "Xiao Xiao",
-    role: "Professor",
-    affiliation: "De Vinci Higher Education",
-    photo: "/images/organizers/xiao-xiao.jpg",
-    url: "https://scholar.google.com/citations?user=tbqqAOYAAAAJ&hl=en",
+    name: "Ana Tajadura-Jiménez",
+    role: "Associate Professor",
+    affiliation: "Universidad Carlos III de Madrid / University College London",
+    photo: "/images/organizers/ana-tajadura-jimenez.jpg",
+    url: "https://www.dei.inf.uc3m.es/portal/index.php?page=people-personal&id=1234",
     motivation: {
       excites: [
-        "I am particularly interested in ways of bridging embodied and data-driven ways of knowing. Part of it is understanding ways of thinking/doing that allow people who get to the top of their game in different disciplines, and creating technologies that enable other people to experience these ways of thinking/doing. Another thing that interests me is finding the commonalities of motor learning across domains, and ways of \"transferring\" motor capacities from one domain to another.",
-        "Another thing is about surprising \"superpowers\" that you gain from getting really good at specific motor skills that apply beyond the original application domain. One example is that through learning to play the theremin, I got a lot better at imitating bird sounds and became more sensitive to the musicality of speech and everyday sounds. This is a gain in perception more than in pure motor output.",
+        "1.How the brain integrates bodily signals through sensorimotor loops, and what role body perception (and its distortions) plays in motor learning. This is something sensory technologies let us study, to advance basic neuroscience.", 
+        "2. How to design technologies that transform body perception to support motor learning, specifically looking at benefits for health and wellbeing.", 
+        "3. How to make (sensori)motor learning hold up in everyday, real-world use of these technologies, not just in the lab."
       ],
-      personal: [
-        "A big part of it is understanding the cartography of research in motor learning and seeing how to position my interests. I haven't really been publishing my work explicitly as motor learning, and a main motivation is about how to frame what I am doing in a way that can be shared with the community.",
-      ],
+      personal: ["To create a multidisciplinary community to study and design together these technologies. A joint article mapping the field would be amazing!"],
     },
+  },
+  {
+    name: "Robert Riener",
+    role: "Professor",
+    affiliation: "ETH Zürich",
+    photo: "/images/organizers/robert-riener.jpg",
+    url: "https://sms.hest.ethz.ch/the-group/team/robert-riener.html",
+    motivation: {
+      excites: [
+        "How to find responders that show an individual effect about motor learning in therapy",
+        "How to increase the effectiveness of motor learning significantly"
+        ],
+      personal: [],
+    }
   },
   {
     name: "Joanna Bergström",
@@ -386,21 +389,18 @@ export const organizers: Organizer[] = [
     },
   },
   {
-    name: "Elena Márquez Segura",
-    role: "Assistant Professor",
-    affiliation: "Universidad Carlos III de Madrid",
-    photo: "/images/organizers/elena-marquez-segura.jpg",
-    url: "https://imbodylab.com/2026/01/27/elena-marquez-segura/",
+    name: "Peter Wolf",
+    role: "Senior Scientist",
+    affiliation: "ETH Zürich",
+    photo: "/images/organizers/peter-wolf.jpg",
+    url: "https://sms.hest.ethz.ch/the-group/team/peter-wolf.html",
     motivation: {
       excites: [
-        "I am interested in how the presence of technology shapes attention and experience during movement learning. Sometimes receding into the background and becoming almost transparent in action, but at other times we may deliberately want it highly noticeable: a dramatic sound, celebratory music, a vibration, or a visual effect can amplify a movement and transform it into a moment of performance.",
-        "What interests me is that technological prominence does not map straightforwardly onto attentional focus or integration. A highly salient cue may still feel tightly integrated with one's movement; an external sound may orient attention toward an audience, evoke the presence of a coach, or intensify awareness of the bodily qualities that supported the action. Conversely, subtle technology may remain largely unnoticed while strongly shaping where attention goes.",
-        "I would like to explore how we can design across these different degrees of technological transparency, prominence, and integration, and how they alter what learners attend to and how movement is experienced. When should technology disappear into action, when should it become deliberately foregrounded, and how can both support compelling and effective movement learning?",
+        "I like to hear about motor learning (i.e. lasting effects once feedback is no longer present) rather than 'just' performance enhancement (i.e. whether feedback improves current performance).",
+        "I love overviews of different types of feedback: how can learning tasks be categorised, and which type of feedback works best for learners with different levels of expertise? We have done [one on haptic feedback](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9513580&tag=1). And in what form can — or could — typical learning approaches be implemented in virtual trainers?",
+        "I tend to prefer presentations that allow for generalisation rather than focusing exclusively on a very specific study with hardly transferable results.",
       ],
-      personal: [
-        "I would like to use the workshop to connect the different ways this group approaches motor learning—from mechanisms of adaptation, feedback, transfer and body perception to embodied, experiential and real-world perspectives on movement. In particular, I am interested in developing a richer vocabulary for understanding how technology shapes attention and bodily experience during learning, beyond asking only whether it improves performance or retention.",
-        "I would also like to explore whether there are design principles that cut across modalities and movement domains: e.g., when technology should be perceptually prominent or transparent, when it should guide attention, and when it can become integrated into the experience of moving. I am particularly interested in bringing perspectives from embodied interaction, soma design, theatre and dramaturgy into dialogue with motor-learning research, and seeing how concepts such as timing, staging, foregrounding and performance might extend how we think about technology-mediated learning.",
-      ],
+      personal: [],
     },
   },
 ];
