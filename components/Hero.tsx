@@ -81,7 +81,7 @@ export default function Hero() {
             {site.dateBadge}
           </Box>
 
-          {/* 応募フォームへの丸いボタン */}
+          {/* 応募フォームへの丸いボタン（広い画面では波線の上に貼ったシール風） */}
           <Box
             component="a"
             href={submission.url}
@@ -93,20 +93,25 @@ export default function Hero() {
               justifyContent: "center",
               textAlign: "center",
               flexShrink: 0,
-              width: { xs: 112, md: 150 },
-              height: { xs: 112, md: 150 },
+              position: { xs: "static", md: "absolute" },
+              left: { md: 32 },
+              bottom: { md: 24 },
+              zIndex: 4,
+              width: { xs: 124, md: 200 },
+              height: { xs: 124, md: 200 },
               p: 2,
               borderRadius: "50%",
               bgcolor: colors.yellow,
               color: colors.navy,
               fontWeight: 700,
-              lineHeight: 1.3,
-              fontSize: { xs: "0.85rem", md: "0.95rem" },
+              lineHeight: 1.25,
+              letterSpacing: "0.01em",
+              fontSize: { xs: "0.9rem", md: "1.25rem" },
               textDecoration: "none",
-              boxShadow: "0 8px 20px rgba(41,66,112,0.25)",
+              boxShadow: "0 10px 24px rgba(41,66,112,0.3)",
               transform: "rotate(-6deg)",
               transition: "transform 0.2s ease",
-              "&:hover": { transform: "rotate(0deg) scale(1.04)" },
+              "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
             {submission.label}
