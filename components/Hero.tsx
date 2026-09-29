@@ -81,7 +81,7 @@ export default function Hero() {
             {site.dateBadge}
           </Box>
 
-          {/* 応募フォームへの丸いボタン（広い画面では波線の上に貼ったシール風） */}
+          {/* 応募フォームへのボタン（タブのアイコンと同じピンクの星） */}
           <Box
             component="a"
             href={submission.url}
@@ -94,27 +94,31 @@ export default function Hero() {
               textAlign: "center",
               flexShrink: 0,
               position: { xs: "static", md: "absolute" },
-              left: { md: 32 },
-              bottom: { md: 24 },
+              left: { md: 16, lg: 40 },
+              bottom: { md: -40 },
               zIndex: 4,
-              width: { xs: 124, md: 200 },
-              height: { xs: 124, md: 200 },
-              p: 2,
-              borderRadius: "50%",
-              bgcolor: colors.yellow,
-              color: colors.navy,
+              width: { xs: 168, md: 240, lg: 280 },
+              height: { xs: 168, md: 240, lg: 280 },
+              // タブのアイコン（app/icon.svg）と同じ4点星
+              backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
+                `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='${colors.pink}' d='M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z'/></svg>`,
+              )}")`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              color: colors.white,
               fontWeight: 700,
               lineHeight: 1.25,
-              letterSpacing: "0.01em",
-              fontSize: { xs: "0.9rem", md: "1.25rem" },
+              fontSize: { xs: "0.75rem", md: "1.1rem" },
               textDecoration: "none",
-              boxShadow: "0 10px 24px rgba(41,66,112,0.3)",
               transform: "rotate(-6deg)",
               transition: "transform 0.2s ease",
               "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
-            {submission.label}
+            <Box component="span" sx={{ width: "46%" }}>
+              {submission.label}
+            </Box>
           </Box>
           </Box>
         </Box>
