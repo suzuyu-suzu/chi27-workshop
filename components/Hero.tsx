@@ -5,6 +5,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { images, site, submission } from "@/content/site";
 import { asset } from "@/lib/asset";
 import { colors } from "@/theme/colors";
+import { STAR_CLIP_PATH } from "./starShape";
 
 export default function Hero() {
   return (
@@ -60,10 +61,9 @@ export default function Hero() {
           <Box
             sx={{
               display: "flex",
-              flexDirection: { xs: "column", md: "row" },
               alignItems: "center",
               justifyContent: { xs: "center", md: "flex-start" },
-              gap: { xs: 2, md: 4 },
+              gap: { xs: 1, md: 4 },
               mt: { xs: 3, md: 4 },
             }}
           >
@@ -74,8 +74,9 @@ export default function Hero() {
               py: 1,
               border: `3px solid ${colors.navy}`,
               fontWeight: 700,
-              fontSize: { xs: "1.1rem", md: "1.35rem" },
-              letterSpacing: "0.12em",
+              fontSize: { xs: "0.95rem", md: "1.35rem" },
+              letterSpacing: "0.1em",
+              whiteSpace: "nowrap",
               bgcolor: "rgba(255,255,255,0.6)",
             }}
           >
@@ -98,27 +99,22 @@ export default function Hero() {
               left: { md: 24, lg: 56 },
               bottom: { md: -28 },
               zIndex: 4,
-              width: { xs: 260, md: 420, lg: 470 },
-              height: { xs: 175, md: 240, lg: 265 },
-              // タブのアイコン（app/icon.svg）と同じ4点星
-              backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
-                `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='${colors.pink}' d='M12 0C14 6 18 10 24 12C18 14 14 18 12 24C10 18 6 14 0 12C6 10 10 6 12 0Z'/></svg>`,
-              )}")`,
-              // 星を横長に引き伸ばす
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              width: { xs: 185, md: 420, lg: 470 },
+              height: { xs: 140, md: 240, lg: 265 },
+              // 星の形に切り抜く（星の外側はホバー・クリックに反応しない）
+              clipPath: STAR_CLIP_PATH,
+              bgcolor: colors.pink,
               color: colors.white,
               fontWeight: 700,
-              lineHeight: 1.25,
-              fontSize: { xs: "0.8rem", md: "1.05rem" },
+              lineHeight: 1.2,
+              fontSize: { xs: "0.72rem", md: "1.3rem" },
               textDecoration: "none",
               transform: "rotate(-6deg)",
               transition: "transform 0.2s ease",
               "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
-            <Box component="span" sx={{ width: "38%" }}>
+            <Box component="span" sx={{ width: { xs: "46%", md: "42%" } }}>
               {submission.label}
             </Box>
           </Box>
