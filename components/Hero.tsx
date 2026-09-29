@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import { images, site } from "@/content/site";
+import { images, site, submission } from "@/content/site";
 import { asset } from "@/lib/asset";
 import { colors } from "@/theme/colors";
 
@@ -59,8 +59,16 @@ export default function Hero() {
           </Typography>
           <Box
             sx={{
-              display: "inline-block",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: { xs: "center", md: "flex-start" },
+              gap: { xs: 2, md: 4 },
               mt: { xs: 3, md: 4 },
+            }}
+          >
+          <Box
+            sx={{
+              display: "inline-block",
               px: 2.5,
               py: 1,
               border: `3px solid ${colors.navy}`,
@@ -71,6 +79,38 @@ export default function Hero() {
             }}
           >
             {site.dateBadge}
+          </Box>
+
+          {/* 応募フォームへの丸いボタン */}
+          <Box
+            component="a"
+            href={submission.url}
+            target="_blank"
+            rel="noopener"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              flexShrink: 0,
+              width: { xs: 112, md: 150 },
+              height: { xs: 112, md: 150 },
+              p: 2,
+              borderRadius: "50%",
+              bgcolor: colors.yellow,
+              color: colors.navy,
+              fontWeight: 700,
+              lineHeight: 1.3,
+              fontSize: { xs: "0.85rem", md: "0.95rem" },
+              textDecoration: "none",
+              boxShadow: "0 8px 20px rgba(41,66,112,0.25)",
+              transform: "rotate(-6deg)",
+              transition: "transform 0.2s ease",
+              "&:hover": { transform: "rotate(0deg) scale(1.04)" },
+            }}
+          >
+            {submission.label}
+          </Box>
           </Box>
         </Box>
 

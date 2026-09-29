@@ -12,6 +12,12 @@ export const images = {
   character: "/images/character.png",
 };
 
+/** ポジションペーパーの応募フォーム */
+export const submission = {
+  label: "Submit your position paper",
+  url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform",
+};
+
 export const site = {
   conference: "CHI'27",
   title: "From Interaction to Learning: Technology-Mediated Motor Learning in HCI",
@@ -21,9 +27,8 @@ export const site = {
 };
 
 export const about: string[] = [
-  "Emerging technologies such as multimodal feedback, wearable sensing, mixed reality, robotics, and artificial intelligence offer new ways to shape how people practice and experience movement. Yet, improved performance during technology-mediated practice does not necessarily result in lasting motor learning. This raises questions about how technology should support, evaluate, and translate motor learning across different people, skills, and contexts.",
-  "Research addressing these questions is distributed across technologies and movement domains, with researchers and labs often pursuing related questions independently. This workshop provides a platform to bring these perspectives together and explore what can be learned across domains.",
-  "Through short presentations, hands-on exploration, breakout discussions and collaborative ideation, participants will examine four interconnected questions around embodied learning, feedback and assistance, transfer, and evaluation and translation. We will synthesize these discussions into shared challenges, design opportunities, open research questions, and outline concrete directions for future research and collaboration.",
+  "Emerging technologies such as multimodal displays, wearable sensing, mixed reality, robotics, and artificial intelligence offer new ways to shape how people practice and experience movement.",
+  "Yet, improved performance during technology-mediated practice does not necessarily result in lasting motor learning. This raises questions about how technology should support, evaluate, and translate motor learning across different people, skills, and contexts. Research addressing these questions is distributed across technologies and movement domains, with researchers and labs often pursuing related questions independently. This workshop provides a platform to bring these perspectives together and explore what can be learned across domains. Through short presentations, hands-on exploration, breakout discussions and collaborative ideation, participants will examine four interconnected questions around embodied learning, feedback and assistance, transfer, and evaluation and translation. We will synthesize these discussions into shared challenges, design opportunities, open research questions, and outline concrete directions for future research and collaboration.",
 ];
 
 export const where = {
@@ -414,7 +419,7 @@ export const callForParticipation = {
     "Accepted papers will be used to inform breakout discussions, and authors will have a choice to have their accepted paper published on the workshop website.",
   ],
   links: [
-    { label: "Submit your position paper", url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform" },
+    submission,
     { label: "ACM Master Article Template", url: "https://chi2027.acm.org/chi-publication-formats/" },
   ],
 };
@@ -508,7 +513,7 @@ export const faq: FaqItem[] = [
   {
     question: "How to apply as a participant?",
     answer: ["Participants can apply by submitting the Google form."],
-    links: [{ label: "Submission form", url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform" }],
+    links: [{ label: "Submission form", url: submission.url }],
   },
   {
     question: "What should be in the document submitted by the participants?",

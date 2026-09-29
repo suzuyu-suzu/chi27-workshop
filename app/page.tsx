@@ -83,9 +83,11 @@ export default function Home() {
               </Stack>
             </Section>
 
+{/* 採択論文が決まるまで非表示。表示するにはこのコメントを外してください
             <Section id="position-papers" title="Position Papers">
               <PositionPapers />
             </Section>
+            */}
 
             <Section id="faq" title="FAQ">
               <Faq />
