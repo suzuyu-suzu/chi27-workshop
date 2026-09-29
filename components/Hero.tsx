@@ -98,11 +98,11 @@ export default function Hero() {
               left: { md: 24, lg: 56 },
               bottom: { md: -28 },
               zIndex: 4,
-              width: { xs: 250, md: 380, lg: 440 },
-              height: { xs: 175, md: 230, lg: 260 },
+              width: { xs: 260, md: 420, lg: 470 },
+              height: { xs: 175, md: 240, lg: 265 },
               // タブのアイコン（app/icon.svg）と同じ4点星
               backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(
-                `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='${colors.pink}' d='M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z'/></svg>`,
+                `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='${colors.pink}' d='M12 0C14 6 18 10 24 12C18 14 14 18 12 24C10 18 6 14 0 12C6 10 10 6 12 0Z'/></svg>`,
               )}")`,
               // 星を横長に引き伸ばす
               backgroundSize: "100% 100%",
@@ -118,7 +118,7 @@ export default function Hero() {
               "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
-            <Box component="span" sx={{ width: "40%" }}>
+            <Box component="span" sx={{ width: "38%" }}>
               {submission.label}
             </Box>
           </Box>
