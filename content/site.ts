@@ -415,7 +415,7 @@ export const callForParticipation = {
   ],
   links: [
     { label: "Submit your position paper", url: "https://docs.google.com/forms/d/e/1FAIpQLScbY4B0j9QGeYMwTG0tbTjopYgVQnEchHT2tlMkNetwlqDxhQ/viewform" },
-    { label: "ACM Master Article Template", url: "https://chi2025.acm.org/chi-publication-formats/" },
+    { label: "ACM Master Article Template", url: "https://chi2027.acm.org/chi-publication-formats/" },
   ],
 };
 
@@ -517,7 +517,7 @@ export const faq: FaqItem[] = [
       "We encourage your position paper to focus on at least one of the four questions discussed during the workshop — (a) embodied and experiential learning, (b) feedback and technological assistance, (c) transfer across skills and contexts, or (d) evaluation and translation — or to present another area you believe should be discussed.",
       "The paper should briefly introduce yourself and give an overview of what you believe is important and needs discussion in your chosen area, and you are highly encouraged to present your own work in this context.",
     ],
-    links: [{ label: "CHI 2027 publication formats", url: "https://chi2027.acm.org/" }],
+    links: [{ label: "CHI 2027 publication formats", url: "https://chi2027.acm.org/chi-publication-formats/" }],
   },
   {
     question: "Will the submitted paper be published or displayed on the website?",

@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
@@ -68,17 +69,31 @@ export default function Home() {
 
             <Section id="call-for-participation" title="Call for Participation">
               <Paragraphs items={callForParticipation.paragraphs} />
-              {callForParticipation.links.map((l) => (
-                <Link
-                  key={l.url}
-                  href={l.url}
-                  target="_blank"
-                  rel="noopener"
-                  sx={{ display: "inline-block", mt: 2, color: colors.yellow, fontWeight: 700 }}
-                >
-                  {l.label}
-                </Link>
-              ))}
+              <Stack
+                direction={{ xs: "column", sm: "row" }}
+                spacing={2}
+                sx={{ mt: 4, alignItems: { xs: "stretch", sm: "center" } }}
+              >
+                {callForParticipation.links.map((l, i) => (
+                  <Button
+                    key={l.url}
+                    href={l.url}
+                    target="_blank"
+                    rel="noopener"
+                    variant={i === 0 ? "contained" : "outlined"}
+                    color={i === 0 ? "primary" : "inherit"}
+                    sx={{
+                      fontWeight: 700,
+                      textTransform: "none",
+                      px: 3,
+                      py: 1.25,
+                      ...(i === 0 ? { color: colors.navy } : { borderColor: "rgba(255,255,255,0.5)" }),
+                    }}
+                  >
+                    {l.label}
+                  </Button>
+                ))}
+              </Stack>
             </Section>
 
             <Section id="position-papers" title="Position Papers">
