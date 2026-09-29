@@ -74,8 +74,8 @@ export default function Hero() {
               py: 1,
               border: `3px solid ${colors.navy}`,
               fontWeight: 700,
-              fontSize: { xs: "0.95rem", md: "1.35rem" },
-              letterSpacing: "0.1em",
+              fontSize: { xs: "1.1rem", md: "1.35rem" },
+              letterSpacing: "0.12em",
               whiteSpace: "nowrap",
               bgcolor: "rgba(255,255,255,0.6)",
             }}
@@ -95,26 +95,26 @@ export default function Hero() {
               justifyContent: "center",
               textAlign: "center",
               flexShrink: 0,
-              position: { xs: "static", md: "absolute" },
-              left: { md: 24, lg: 56 },
-              bottom: { md: -28 },
+              position: "absolute",
+              left: { xs: 4, md: 24, lg: 56 },
+              bottom: { xs: -16, md: -28 },
               zIndex: 4,
-              width: { xs: 185, md: 420, lg: 470 },
-              height: { xs: 140, md: 240, lg: 265 },
+              width: { xs: 190, md: 370, lg: 420 },
+              height: { xs: 150, md: 270, lg: 300 },
               // 星の形に切り抜く（星の外側はホバー・クリックに反応しない）
               clipPath: STAR_CLIP_PATH,
               bgcolor: colors.pink,
               color: colors.white,
               fontWeight: 700,
               lineHeight: 1.2,
-              fontSize: { xs: "0.72rem", md: "1.3rem" },
+              fontSize: { xs: "0.75rem", md: "1.3rem" },
               textDecoration: "none",
               transform: "rotate(-6deg)",
               transition: "transform 0.2s ease",
               "&:hover": { transform: "rotate(0deg) scale(1.05)" },
             }}
           >
-            <Box component="span" sx={{ width: { xs: "46%", md: "42%" } }}>
+            <Box component="span" sx={{ width: { xs: "48%", md: "46%" } }}>
               {submission.label}
             </Box>
           </Box>
